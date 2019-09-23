@@ -16,7 +16,7 @@ echo "inastall package... (use "apt")"
 echo ""
 echo ""
 sleep 2.5
-sudo apt install git bc libncueses5-dev
+sudo apt install git bc libncurses5-dev
 echo "Done!"
 echo ""
 echo "installing kernel source code..."
@@ -34,10 +34,5 @@ echo "Check if 3f203000.i2s and snd-socdummy are displayed."
 sleep 6.9
 sudo cat /sys/kernel/debug/asoc/platforms
 sleep 10
-echo "Do you want to install rpi-i2s-audio?[y/n]"
-read ANSWER
-
-case $ANSWER in
-    "" | "Y" | "y" | "yes" | "Yes" | "YES" ) cd ~ && git clone https://github.com/keisukekisu/rpi-i2s-audio-installer.git && cd rpi-i2s-audio-installer && chmod +x *.sh && ./installer-V0_0_4.sh;;
-    * ) echo "exit" && exit;;
-esac
+echo "install rpi-i2s-audio?"
+cd ~ && git clone https://github.com/keisukekisu/rpi-i2s-audio-installer.git && cd rpi-i2s-audio-installer && chmod +x *.sh && ./installer-V0_0_4.sh
