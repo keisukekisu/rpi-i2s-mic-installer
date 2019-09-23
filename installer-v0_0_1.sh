@@ -34,5 +34,5 @@ echo "Check if 3f203000.i2s and snd-socdummy are displayed."
 sleep 6.9
 sudo cat /sys/kernel/debug/asoc/platforms
 sleep 10
-echo "install rpi-i2s-audio?"
+echo "install rpi-i2s-audio"
 cd ~ && git clone https://github.com/keisukekisu/rpi-i2s-audio-installer.git && cd rpi-i2s-audio-installer && chmod +x *.sh && ./installer-V0_0_4.sh
