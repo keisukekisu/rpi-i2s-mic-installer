@@ -1,1 +1,1 @@
-# roi2s-installer
+# rpi-i2s-mic-installer
